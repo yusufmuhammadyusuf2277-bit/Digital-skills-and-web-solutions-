@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* HEADER */
+.header {
+  background: #0f172a;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+nav a {
+  color: #ffffff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  background: #f8fafc;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  background: #0073aa;
+  color: #fff;
+  padding: 12px 22px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #0073aa;
+  color: #0073aa;
+}
+/* Section container */
+.tutorial-section {
+  display: flex;
+  justify-content: center; /* center the card */
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* gradient background */
+  border-radius: 15px;
+  margin: 30px 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08); /* soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card inside section */
+.tutorial-card {
+  max-width: 700px;
+  text-align: center;
+  background: #0073aa;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for card */
+.tutorial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+/* Card heading */
+.tutorial-card h2 {
+  font-size: 28px;
+  color: #1e293b;
+  margin-bottom: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Paragraph */
+.tutorial-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #475569;
+  margin-bottom: 25px;
+}
+
+/* Button */
+.tutorial-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #0073aa; /* blue button */
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.tutorial-btn:hover {
+  background: #0073aa; /* darker blue */
+  transform: translateY(-3px);
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 0;
+}
+
+.section.light {
+  background: #white;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 35px;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  padding: 25px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.card h4 {
+  margin-bottom: 10px;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #0073aa;
+  text-decoration: none;
+}
+
+/* FEATURES */
+.features {
+  max-width: 600px;
+  margin: auto;
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* STEPS */
+.steps {
+  max-width: 600px;
+  margin: auto;
+  padding-left: 20px;
+}
+
+/* FOOTER */
+.footer {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+copyright {
+  font-size: 13px;
+  margin-top: 10px;
+}
