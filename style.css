@@ -78,9 +78,23 @@ nav a:hover {
 }
 
 .btn-outline {
-  background: transparent;
-  border: 2px solid #0073aa;
-  color: #0073aa;
+    display: inline-block;       /* Keeps button inline, doesn't stretch full width */
+    padding: 8px 16px;           /* Adjust size: vertical | horizontal */
+    font-size: 16px;             /* Text size */
+    border: 2px solid #4CAF50;  /* Outline color */
+    border-radius: 5px;          /* Rounded corners */
+    background-color: transparent;
+    color: #4CAF50;              /* Text color */
+    text-align: center;          /* Center text */
+    cursor: pointer;
+    line-height: 1.2;            /* Prevents extra height */
+    margin: 0;                    /* No extra margin */
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: #4CAF50;
+    color: white;
 }
 /* Section container */
 .tutorial-section {
