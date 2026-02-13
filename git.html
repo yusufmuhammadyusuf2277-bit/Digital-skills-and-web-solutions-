@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Git & GitHub Guide for Beginners | YusufMTech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn Git and GitHub from beginner to advanced in this complete free course by YusufMTech.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0d1117;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #161b22;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #58a6ff;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+
+        .section-title {
+            margin: 40px 0 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .lesson-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .lesson-box {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .lesson-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .lesson-box a {
+            text-decoration: none;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .lesson-content {
+            background: white;
+            padding: 25px;
+            margin: 40px 0;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+        }
+
+        .lesson-content h2 {
+            margin-bottom: 15px;
+            color: #0d1117;
+        }
+
+        .lesson-content p {
+            margin-bottom: 15px;
+        }
+
+        code {
+            background: #f1f1f1;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        footer {
+            background: #0d1117;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Complete Git & GitHub Guide (2026)</h1>
+    <p>By YusufMTech</p>
+</header>
+
+<nav>
+    <a href="#lesson1">Lesson 1</a>
+    <a href="#lesson2">Lesson 2</a>
+    <a href="#lesson3">Lesson 3</a>
+    <a href="#lesson4">Lesson 4</a>
+    <a href="#lesson5">Lesson 5</a>
+</nav>
+
+<!-- ================= PART 1: LESSONS 1–10 ================= -->
+
+<div id="l1" class="lesson-content">
+  <h2>Lesson 1: What is Git?</h2>
+  <p>Git is a distributed version control system designed to track changes in your code over time. Before Git, developers often saved multiple copies of files with confusing names like <code>project-final.html</code>, <code>project-final2.html</code>, etc. Git solves this by keeping a full history of your project, allowing you to revert to previous versions easily.</p>
+  <p>Created in 2005 by Linus Torvalds, Git handles large projects efficiently and safely. Developers worldwide use it to manage websites, software, and apps.</p>
+  <p>Benefits of learning Git include:</p>
+  <ul>
+    <li>Preventing data loss</li>
+    <li>Professional workflow</li>
+    <li>Required for most tech jobs and freelancing</li>
+    <li>Collaboration with teams</li>
+  </ul>
+</div>
+
+<div id="l2" class="lesson-content">
+  <h2>Lesson 2: What is Version Control?</h2>
+  <p>Version control records changes to files so you can revert to earlier states if needed. Without version control, accidentally deleting code could cause major problems.</p>
+  <p>Types of version control:</p>
+  <ul>
+    <li><strong>Centralized:</strong> Requires a central server (e.g., SVN)</li>
+    <li><strong>Distributed:</strong> Each developer has a full copy (e.g., Git)</li>
+  </ul>
+  <p>Version control is essential for tracking changes, collaboration, and managing project history.</p>
+</div>
+
+<div id="l3" class="lesson-content">
+  <h2>Lesson 3: Why Developers Use Git</h2>
+  <p>Git helps developers in multiple ways:</p>
+  <ul>
+    <li><strong>Change Tracking:</strong> Records who made changes and when</li>
+    <li><strong>Collaboration:</strong> Multiple people can work on the same project safely</li>
+    <li><strong>Branching:</strong> Test new features without affecting main code</li>
+    <li><strong>Backup:</strong> GitHub stores code online for safety</li>
+    <li><strong>Professional Requirement:</strong> Essential skill for tech jobs</li>
+  </ul>
+</div>
+
+<div id="l4" class="lesson-content">
+  <h2>Lesson 4: What is GitHub?</h2>
+  <p>GitHub is an online platform for hosting Git repositories. It allows you to store projects, collaborate with others, and showcase your portfolio. Key features:</p>
+  <ul>
+    <li>Cloud storage for repositories</li>
+    <li>Collaboration tools for teams</li>
+    <li>Free hosting for static websites (GitHub Pages)</li>
+    <li>Portfolio for freelancers</li>
+  </ul>
+</div>
+
+<div id="l5" class="lesson-content">
+  <h2>Lesson 5: Git vs GitHub</h2>
+  <p>Git is a version control tool installed locally. GitHub is an online platform that hosts Git repositories. Use Git to manage projects on your computer and GitHub to store and share them online.</p>
+</div>
+
+<div id="l6" class="lesson-content">
+  <h2>Lesson 6: Install Git</h2>
+  <p>Steps to install Git:</p>
+  <ol>
+    <li>Go to <a href="https://git-scm.com" target="_blank">git-scm.com</a></li>
+    <li>Download your system version</li>
+    <li>Install using default settings</li>
+    <li>Verify installation with <code>git --version</code></li>
+  </ol>
+</div>
+
+<div id="l7" class="lesson-content">
+  <h2>Lesson 7: Configure Git</h2>
+  <p>After installation, configure your name and email:</p>
+  <pre><code>git config --global user.name "Your Name"
+git config --global user.email "your@email.com"</code></pre>
+  <p>Check configuration:</p>
+  <pre><code>git config --list</code></pre>
+</div>
+
+<div id="l8" class="lesson-content">
+  <h2>Lesson 8: Understanding Git Bash</h2>
+  <p>Git Bash is a terminal to run Git commands. You can navigate folders, create files, and execute Git operations efficiently.</p>
+  <pre><code>ls
+cd foldername
+mkdir project</code></pre>
+</div>
+
+<div id="l9" class="lesson-content">
+  <h2>Lesson 9: Your First Git Project</h2>
+  <p>Create your first project:</p>
+  <pre><code>mkdir myproject
+cd myproject
+git init
+touch index.html
+git status</code></pre>
+  <p>You now have a local Git repository ready for version control.</p>
+</div>
+
+<div id="l10" class="lesson-content">
+  <h2>Lesson 10: Git Workflow</h2>
+  <p>The Git workflow:</p>
+  <ol>
+    <li>Modify files</li>
+    <li>Add to staging (<code>git add</code>)</li>
+    <li>Commit changes (<code>git commit</code>)</li>
+    <li>Push to GitHub (<code>git push</code>)</li>
+  </ol>
+  <p>Example:</p>
+  <pre><code>git add .
+git commit -m "Initial commit"
+git push</code></pre>
+</div>
+<!-- ================= PART 2: LESSONS 11–20 ================= -->
+
+<div id="l11" class="lesson-content">
+  <h2>Lesson 11: git init</h2>
+  <p>The <code>git init</code> command initializes a new Git repository in your project folder. This creates a hidden <code>.git</code> folder that stores all the version history and configuration.</p>
+  <p>Example:</p>
+  <pre><code>mkdir myproject
+cd myproject
+git init
+</code></pre>
+  <p>After running <code>git init</code>, your folder becomes a Git repository, ready to track changes. Always use this for new projects.</p>
+</div>
+
+<div id="l12" class="lesson-content">
+  <h2>Lesson 12: git status</h2>
+  <p><code>git status</code> shows the state of your repository. It tells you:</p>
+  <ul>
+    <li>Which files have changed</li>
+    <li>Which files are staged for commit</li>
+    <li>Which files are untracked</li>
+  </ul>
+  <p>Example:</p>
+  <pre><code>git status
+</code></pre>
+  <p>Always check <code>git status</code> before committing to avoid mistakes.</p>
+</div>
+
+<div id="l13" class="lesson-content">
+  <h2>Lesson 13: git add</h2>
+  <p>The <code>git add</code> command moves changes from the working directory to the staging area. Only staged changes will be committed.</p>
+  <p>Example:</p>
+  <pre><code>git add index.html
+git add .
+</code></pre>
+  <p>Using <code>git add .</code> stages all changes in your folder. Be careful to stage only what you want.</p>
+</div>
+
+<div id="l14" class="lesson-content">
+  <h2>Lesson 14: git commit</h2>
+  <p><code>git commit</code> saves staged changes to the repository with a descriptive message.</p>
+  <p>Example:</p>
+  <pre><code>git commit -m "Added homepage HTML structure"
+</code></pre>
+  <p>Best practice: Write meaningful commit messages that describe the changes.</p>
+</div>
+
+<div id="l15" class="lesson-content">
+  <h2>Lesson 15: git log</h2>
+  <p><code>git log</code> shows the history of commits in your repository.</p>
+  <p>Example:</p>
+  <pre><code>git log
+</code></pre>
+  <p>Each commit has a unique ID, author, date, and message. This allows you to track all changes made to your project.</p>
+</div>
+
+<div id="l16" class="lesson-content">
+  <h2>Lesson 16: Create GitHub Account</h2>
+  <p>GitHub is an online platform to store and manage your repositories. To create an account:</p>
+  <ol>
+    <li>Go to <a href="https://github.com" target="_blank">github.com</a></li>
+    <li>Click "Sign Up"</li>
+    <li>Enter your username, email, and password</li>
+    <li>Verify your email</li>
+  </ol>
+  <p>Once your account is ready, you can start hosting repositories online.</p>
+</div>
+
+<div id="l17" class="lesson-content">
+  <h2>Lesson 17: Create Repository</h2>
+  <p>After logging into GitHub, you can create a new repository:</p>
+  <ol>
+    <li>Click the "+" icon → "New repository"</li>
+    <li>Give it a name (e.g., <code>myproject</code>)</li>
+    <li>Choose Public or Private</li>
+    <li>Optionally add a README</li>
+    <li>Click "Create repository"</li>
+  </ol>
+  <p>This is where your project will be stored online.</p>
+</div>
+
+<div id="l18" class="lesson-content">
+  <h2>Lesson 18: git remote add</h2>
+  <p>To connect your local repository to GitHub, you need to add a remote:</p>
+  <pre><code>git remote add origin https://github.com/username/myproject.git
+</code></pre>
+  <p>This tells Git where to push your code online. Use <code>git remote -v</code> to verify the connection.</p>
+</div>
+
+<div id="l19" class="lesson-content">
+  <h2>Lesson 19: git push</h2>
+  <p>The <code>git push</code> command uploads your local commits to the GitHub repository.</p>
+  <pre><code>git push -u origin main
+</code></pre>
+  <p>“-u origin main” sets the upstream branch. After the first push, you can simply use <code>git push</code>.</p>
+  <p>This is how your project becomes visible on GitHub.</p>
+</div>
+
+<div id="l20" class="lesson-content">
+  <h2>Lesson 20: git pull</h2>
+  <p><code>git pull</code> downloads the latest changes from GitHub to your local repository.</p>
+  <pre><code>git pull origin main
+</code></pre>
+  <p>This keeps your local project up-to-date, especially when working in a team.</p>
+  <p>Best practice: Always pull before starting new changes to avoid conflicts.</p>
+</div>
+<!-- ================= PART 3: LESSONS 21–30 ================= -->
+
+<div id="l21" class="lesson-content">
+  <h2>Lesson 21: git clone</h2>
+  <p><code>git clone</code> is used to copy a repository from GitHub to your local machine.</p>
+  <pre><code>git clone https://github.com/username/myproject.git</code></pre>
+  <p>This is essential when starting to work on an existing project.</p>
+</div>
+
+<div id="l22" class="lesson-content">
+  <h2>Lesson 22: Branching Basics</h2>
+  <p>Branches allow you to work on new features or experiments without affecting the main project.</p>
+  <p>Example: You can create a <code>feature-login</code> branch to build login functionality without touching the main branch.</p>
+</div>
+
+<div id="l23" class="lesson-content">
+  <h2>Lesson 23: git branch</h2>
+  <p>Create a new branch:</p>
+  <pre><code>git branch feature-login</code></pre>
+  <p>List all branches:</p>
+  <pre><code>git branch</code></pre>
+</div>
+
+<div id="l24" class="lesson-content">
+  <h2>Lesson 24: git checkout</h2>
+  <p>Switch between branches using <code>git checkout</code>:</p>
+  <pre><code>git checkout feature-login</code></pre>
+  <p>Now, any changes you make affect only this branch.</p>
+</div>
+
+<div id="l25" class="lesson-content">
+  <h2>Lesson 25: git merge</h2>
+  <p>Merge changes from one branch into another:</p>
+  <pre><code>git checkout main
+git merge feature-login</code></pre>
+  <p>This integrates your feature branch into the main project.</p>
+</div>
+
+<div id="l26" class="lesson-content">
+  <h2>Lesson 26: Merge Conflicts</h2>
+  <p>Sometimes Git cannot merge automatically. Conflicts happen when two branches change the same line.</p>
+  <p>Steps to resolve:</p>
+  <ol>
+    <li>Open conflicting file</li>
+    <li>Look for conflict markers <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code></li>
+    <li>Edit the file to fix conflicts</li>
+    <li>Stage and commit the resolved file</li>
+  </ol>
+</div>
+
+<div id="l27" class="lesson-content">
+  <h2>Lesson 27: GitHub Pages</h2>
+  <p>GitHub Pages allows you to host static websites for free.</p>
+  <ol>
+    <li>Push your project to GitHub</li>
+    <li>Go to repository settings → Pages</li>
+    <li>Select the branch and folder to publish</li>
+    <li>Save settings and visit the link</li>
+  </ol>
+</div>
+
+<div id="l28" class="lesson-content">
+  <h2>Lesson 28: Custom Domain</h2>
+  <p>You can connect your own domain to GitHub Pages:</p>
+  <ol>
+    <li>Add your domain in repository → Pages settings</li>
+    <li>Create a <code>CNAME</code> file in your repository</li>
+    <li>Update DNS records to point to GitHub</li>
+  </ol>
+</div>
+
+<div id="l29" class="lesson-content">
+  <h2>Lesson 29: Fix HTTPS</h2>
+  <p>To secure your site with HTTPS:</p>
+  <ol>
+    <li>Go to repository settings → Pages</li>
+    <li>Enable "Enforce HTTPS"</li>
+    <li>Wait a few minutes for GitHub to issue a certificate</li>
+  </ol>
+  <p>HTTPS ensures your website is secure and trusted.</p>
+</div>
+
+<div id="l30" class="lesson-content">
+  <h2>Lesson 30: Final Project</h2>
+  <p>Combine everything you’ve learned:</p>
+  <ol>
+    <li>Create a local project and initialize Git</li>
+    <li>Make multiple commits with meaningful messages</li>
+    <li>Create a feature branch, implement changes, merge into main</li>
+    <li>Push project to GitHub</li>
+    <li>Host it using GitHub Pages</li>
+    <li>Connect custom domain and enable HTTPS</li>
+  </ol>
+  <p>This final project demonstrates mastery of Git and GitHub workflow, and it can serve as a portfolio project for freelancing.</p>
+</div>
+
+<footer>
+    © 2026 YusufMTech | All Rights Reserved
+</footer>
+
+</body>
+</html>
