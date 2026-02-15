@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 10 – Web Vulnerability Case Studies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Lesson 10: Web Vulnerability Case Studies</h1>
+</header>
+
+<div class="container">
+  <article>
+
+    <p>
+      This lesson shows **realistic and legal examples** of web vulnerabilities.
+      All examples are safe for educational purposes only.
+    </p>
+
+    <div class="note">
+      Practice only on **your own labs** or **authorized platforms**.
+    </div>
+
+    <h3>Case Study 1: SQL Injection (Safe Lab)</h3>
+    <pre><code>Input field: username
+Payload: ' OR '1'='1
+Effect: Logs in without a password (lab only)</code></pre>
+    <p>
+      SQL Injection occurs when user input is not properly sanitized.
+      Ethical hackers learn to detect and patch this issue.
+    </p>
+
+    <h3>Case Study 2: Cross-Site Scripting (XSS)</h3>
+    <pre><code>Input field: comment
+Payload: &lt;script&gt;alert('XSS')&lt;/script&gt;
+Effect: Script runs in browser (lab only)</code></pre>
+    <p>
+      XSS happens when inputs are rendered without escaping HTML.
+      Ethical hackers report this to secure web applications.
+    </p>
+
+    <h3>Case Study 3: Broken Authentication</h3>
+    <pre><code>Weak passwords
+No multi-factor authentication
+Session ID reuse</code></pre>
+    <p>
+      Users’ accounts can be accessed without proper security.
+      Labs help you learn mitigation strategies safely.
+    </p>
+
+    <div class="nav-buttons">
+      <a href="lesson9.html" class="prev">← Previous Lesson</a>
+      <a href="lesson11.html" class="next">Next Lesson →</a>
+    </div>
+
+    <div class="note">
+      Progress: Lesson 10 of 16
+    </div>
+
+  </article>
+</div>
+
+<footer>
+  <p>Educational use only. Do not test real websites.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson A3 – Python for Hackers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Lesson A3: Python for Ethical Hackers</h1>
+</header>
+
+<div class="container">
+  <article>
+
+    <p>
+      Python is widely used for automation, testing, and lab exercises.
+      This lesson teaches practical scripts for ethical hacking labs.
+    </p>
+
+    <h3>Example 1: Port Scanner</h3>
+    <pre><code>import socket
+
+target = "127.0.0.1"
+for port in range(20, 30):
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    result = s.connect_ex((target, port))
+    if result == 0:
+        print(f"Port {port} is open")
+    s.close()</code></pre>
+
+    <h3>Example 2: Simple Password Tester</h3>
+    <pre><code>passwords = ["1234","password","admin"]
+for p in passwords:
+    if p == "admin":
+        print("Found password!")</code></pre>
+
+    <div class="note">
+      Only run scripts in your labs. Do not attack real systems.
+    </div>
+
+    <div class="nav-buttons">
+      <a href="lessonA2.html">← Previous</a>
+      <a href="lessonA4.html">Next →</a>
+    </div>
+
+    <p class="progress">Advanced Lesson 3 of 5</p>
+
+  </article>
+</div>
+
+<footer>
+  <p>Python empowers automation safely.</p>
+</footer>
+
+</body>
+</html>
